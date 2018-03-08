@@ -1,7 +1,7 @@
 package org.k9.jira
 
 @Grapes(
-    @Grab(group='com.atlassian.jira', module='jira-api', version='7.0.0', scope='provided')
+    @Grab(group='com.atlassian.jira', module='jira-api', version='7.1.0-QR20151229171111', scope='provided')
 )
 
 
