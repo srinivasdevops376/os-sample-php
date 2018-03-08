@@ -13,7 +13,7 @@ pipeline {
                        description: 'New JIRA Created from Jenkins.',
                        issuetype: [name: 'Task']]]
                       def out = new jira.Jira(this,config)
-                       echo "${out.data.key}"
+                       echo "${out}"
  				}
  			}
  		}
