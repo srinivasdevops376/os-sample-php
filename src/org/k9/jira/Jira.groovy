@@ -12,6 +12,8 @@ class Jira implements Serializable {
  	}
 
  	def createJiraTicket(){
+   script.echo "config   ${config}"
+   def issue = config.toString()
  		def newIssue = jiraNewIssue issue: config.issue, site: 'jira'
    script.echo "in create jira method:    ${newIssue}"
  		return newIssue
