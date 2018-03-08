@@ -1,4 +1,6 @@
-@Library(github.com/srinivasdevops376/os-sample-php@master)
+@Library('jira-test')
+import org.k9.jira.Jira
+
 
 pipeline {
  	agent any 
