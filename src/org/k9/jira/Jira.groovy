@@ -2,7 +2,7 @@ package org.k9.jira
 
 import org.k9.*
 
-class Jira implements serializable {
+class Jira implements Serializable {
  	def script
  	def config
 
