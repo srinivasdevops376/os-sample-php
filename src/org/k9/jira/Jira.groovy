@@ -1,5 +1,8 @@
 package org.k9.jira
 
+@Grab(group='com.atlassian.jira', module='jira-api', version='7.0.0', scope='provided')
+
+import com.atlassian.jira.component.ComponentAccessor
 import org.k9.*
 
 class Jira implements Serializable {
@@ -14,8 +17,10 @@ class Jira implements Serializable {
  	def createJiraTicket(){
    script.echo "config   ${config}"
    def issue = config.toString()
- 		def newIssue = jiraNewIssue issue: config, site: 'jira'
-   script.echo "in create jira method:    ${newIssue}"
- 		return newIssue
+ //		def newIssue = jiraNewIssue issue: config, site: 'jira'
+  // script.echo "in create jira method:    ${newIssue}"
+ 	//	return newIssue
+ 	IssueService issueService = ComponentAccessor.getInstance().getIssueService();
+ 	script.echo "issue service ${issueService}"
  	}
  }
