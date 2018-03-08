@@ -1,6 +1,6 @@
 package org.k9.jira
 
-@Grab(group='com.atlassian.jira', module='jira-api', version='7.0.0', scope='provided')
+@Grab('com.atlassian.jira:jira-api:7.0.0')
 
 import com.atlassian.jira.component.ComponentAccessor
 import org.k9.*
