@@ -1,6 +1,9 @@
 package org.k9.jira
 
-@Grab('com.atlassian.jira:jira-api:7.0.0')
+@Grapes(
+    @Grab(group='com.atlassian.jira', module='jira-api', version='7.0.0', scope='provided')
+)
+
 
 import com.atlassian.jira.component.ComponentAccessor
 import org.k9.*
