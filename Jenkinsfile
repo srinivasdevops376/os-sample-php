@@ -1,5 +1,5 @@
 @Library('jira-test')
-import org.k9.jira.Jira
+import org.k9.*
 
 
 pipeline {
@@ -12,7 +12,7 @@ pipeline {
                        summary: 'New JIRA Created from Jenkins.',
                        description: 'New JIRA Created from Jenkins.',
                        issuetype: [name: 'Task']]]
-                       out = new Jira(this,config)
+                       out = new jira.Jira(this,config)
                        echo "${out.data.key}"
  				}
  			}
